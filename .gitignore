@@ -1,0 +1,19 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# VSCode / IDE
+.vscode/
+.idea/
+
+# Python Excel / data files
+*.xlsx
+*.csv
+
+# Logs
+*.log
+
+# Mac / Windows
+.DS_Store
+Thumbs.db
