@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -22,3 +23,24 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+=======
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# VSCode / IDE
+.vscode/
+.idea/
+
+# Python Excel / data files
+*.xlsx
+*.csv
+
+# Logs
+*.log
+
+# Mac / Windows
+.DS_Store
+Thumbs.db
+>>>>>>> 2f38cc7d0797de79443ca721577f6e51d00d3525
