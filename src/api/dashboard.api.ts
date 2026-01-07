@@ -1,6 +1,8 @@
 import type { DashboardResponse } from '../types/dashboard.types';
 
-const BASE_URL = import.meta.env.NEXT_PUBLIC_API_BASE_URL;
+// dashboard.api.ts
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 
 export async function getDashboard():
 Promise<DashboardResponse> {
