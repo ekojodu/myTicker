@@ -15,5 +15,5 @@ export interface FuturePick {
 
 export interface DashboardResponse {
 	history: PortfolioHistoryItem[];
-	future_pick: FuturePick[];
+	future_picks: FuturePick[];
 }
