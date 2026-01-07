@@ -6,7 +6,7 @@ const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 export async function getDashboard():
 Promise<DashboardResponse> {
-	const res = await fetch (`${BASE_URL}/dashboard`);
+	const res = await fetch (`${BASE_URL}/api/dashboard`);
 	if(!res.ok){
 		throw new Error('Failed to fetch dashboard');
 	}
@@ -14,7 +14,7 @@ Promise<DashboardResponse> {
 }
 
 export async function exportDashboard(): Promise<Blob>{
-	const res = await fetch(`${BASE_URL}/export`);
+	const res = await fetch(`${BASE_URL}/api/export`);
 	if(!res.ok){
 		throw new Error('Failed to export dashboard');
 	}
