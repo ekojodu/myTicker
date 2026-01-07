@@ -19,7 +19,7 @@ export const DashboardLayout = ({ children }: Props) => {
 			>
 				Export Excel
 			</button>
-			if(loading) return <LoadingSkeleton />
+			<LoadingSkeleton />
 		</div>
 	);
 };
