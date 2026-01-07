@@ -5,9 +5,9 @@ interface Props {
 
 export const MetricCard = ({ label, value }: Props) => {
 	return (
-		<div className='bg-white rounded-xl shadow p-4'>
-			<p className='text-sm text-slate-500'>{label}</p>
-			<p className='text-2xl font-bold mt-1'>{value}</p>
+		<div className='bg-white rounded-xl border border-slate-200 shadow-sm p-4'>
+			<p className='text-sm text-slate-500 tracking-wide'>{label}</p>
+			<p className='mt-1 text-2xl font-semibold text-slate-900'>{value}</p>
 		</div>
 	);
 };
