@@ -16,7 +16,7 @@ export function Dashboard() {
 	const futurePicks = data.future_picks ?? [];
 
 	return (
-		<div className='min-h-screen bg-slate-100 px-6 py-8 space-y-8 text-slate-800 antialiased'>
+		<div className='min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 px-6 py-8 space-y-8 text-slate-800 antialiased'>
 			{/* Metric Cards Row */}
 			<div className='grid grid-cols-1 md:grid-cols-4 gap-6'>
 				<MetricCard label='Strategy Value' value={latest?.cumulative ?? 0} />

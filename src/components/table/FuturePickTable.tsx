@@ -6,14 +6,14 @@ interface Props {
 
 export function FuturePickTable({ picks }: Props) {
 	return (
-		<div className='bg-white rounded-xl border border-slate-200 shadow-sm p-6'>
-			<h2 className='text-lg font-semibold mb-4 text-slate-900'>
-				Future Top 10 Picks
-			</h2>
+		<div className='bg-white/90 backdrop-blur rounded-2xl shadow-2xl border border-slate-200 overflow-hidden'>
+			<div className='bg-gradient-to-r from-blue-600 to-indigo-700 px-6 py-4'>
+				<h2 className='text-xl font-bold text-white'>Future Top 10 Picks</h2>
+			</div>
 
-			<table className='w-full border-collapse'>
+			<table className='w-full'>
 				<thead>
-					<tr className='text-left text-sm text-slate-500 border-b border-slate-300'>
+					<tr className='text-left text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-700'>
 						<th className='py-2 px-3'>Ticker</th>
 						<th className='py-2 px-3'>PEG</th>
 						<th className='py-2 px-3'>ROE</th>

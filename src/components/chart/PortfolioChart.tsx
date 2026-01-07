@@ -41,23 +41,31 @@ export function PortfolioChart({ history }: Props) {
 						labelStyle={{ fontWeight: 500 }}
 					/>
 					<Legend wrapperStyle={{ fontSize: 12, color: '#475569' }} />
-
 					<Line
 						type='monotone'
 						dataKey='cumulative'
-						stroke='#2563eb' // blue for your strategy
-						strokeWidth={2}
+						stroke='#4f46e5' // indigo-600
+						strokeWidth={3}
 						name='Buffett + AI'
 						dot={false}
+						fillOpacity={0.1}
+						fill='url(#colorStrategy)' // add gradient fill
 					/>
 					<Line
 						type='monotone'
 						dataKey='cumulative_sp500'
-						stroke='#64748b' // gray-blue for S&P 500
-						strokeWidth={2}
+						stroke='#94a3b8' // slate-400
+						strokeWidth={3}
 						name='S&P 500'
 						dot={false}
 					/>
+					// Add this inside LineChart for gradient fill
+					<defs>
+						<linearGradient id='colorStrategy' x1='0' y1='0' x2='0' y2='1'>
+							<stop offset='5%' stopColor='#4f46e5' stopOpacity={0.4} />
+							<stop offset='95%' stopColor='#4f46e5' stopOpacity={0} />
+						</linearGradient>
+					</defs>
 				</LineChart>
 			</ResponsiveContainer>
 		</div>
